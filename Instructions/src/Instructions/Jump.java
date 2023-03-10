@@ -7,4 +7,8 @@ public class Jump extends Instructions{
 	Jump(int instructie) {
 		this.a = instructie;
 	}
+	
+	public void execute(Program p) {
+		p.pc = a;
+	}
 }

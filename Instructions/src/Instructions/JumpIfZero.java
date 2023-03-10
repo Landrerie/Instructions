@@ -9,4 +9,13 @@ public class JumpIfZero extends Instructions{
 		this.r = inputregister;
 		this.a = instructie;
 	}
+	
+	public void execute(Program p) {
+		if(p.registers[r] == 0) {
+			p.pc = a;
+		}
+		else {
+			p.pc++;
+		}
+	}
 }

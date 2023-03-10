@@ -10,4 +10,8 @@ public class LoadConstant extends Instructions{
 		this.c = inputconstant;
 	}
 	
+	public void execute(Program p) {
+		p.registers[r] = c;
+		p.pc++;
+	}
 }
